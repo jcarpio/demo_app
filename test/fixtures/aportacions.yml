@@ -12,9 +12,9 @@ one:
   telefono: MyString
   email: MyString
   cantidad: MyString
-  en_mecenas: 
-  certificado: 
-  comprobado: 
+  en_mecenas: false
+  certificado: false
+  comprobado: false
 
 two:
   name: MyString
@@ -28,6 +28,6 @@ two:
   telefono: MyString
   email: MyString
   cantidad: MyString
-  en_mecenas: 
-  certificado: 
-  comprobado: 
+  en_mecenas: false
+  certificado: false
+  comprobado: false
