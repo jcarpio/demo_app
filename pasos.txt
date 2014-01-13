@@ -1,2 +1,7 @@
-rails generate scaffold User name:string email:string dni_cif:string dir1:string dir2:string cp:string localidad:string provincia:string telefono:string email:string cantidad:string en_mecenas:bool certificado:bool comprobado:bool
+rails generate scaffwold User name:string email:string dni_cif:string dir1:string dir2:string cp:string localidad:string provincia:string telefono:string email:string cantidad:string en_mecenas:boolean certificado:boolean comprobado:boolean
+
+rails generate scaffold Micropost content:string user_id:integer
+
+Pasamos el modelo a la base de datos
+bundle exec rake db:migrate
 

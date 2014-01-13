@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140113145629) do
+ActiveRecord::Schema.define(version: 20140113151558) do
 
   create_table "aportacions", force: true do |t|
     t.string   "name"
@@ -27,6 +27,13 @@ ActiveRecord::Schema.define(version: 20140113145629) do
     t.boolean  "en_mecenas"
     t.boolean  "certificado"
     t.boolean  "comprobado"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "microposts", force: true do |t|
+    t.string   "content"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
