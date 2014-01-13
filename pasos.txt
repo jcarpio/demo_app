@@ -1,0 +1,2 @@
+rails generate scaffold User name:string email:string dni_cif:string dir1:string dir2:string cp:string localidad:string provincia:string telefono:string email:string cantidad:string en_mecenas:bool certificado:bool comprobado:bool
+

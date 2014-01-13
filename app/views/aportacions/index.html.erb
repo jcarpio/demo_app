@@ -1,0 +1,53 @@
+<h1>Listing aportacions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Dni cif</th>
+      <th>Dir1</th>
+      <th>Dir2</th>
+      <th>Cp</th>
+      <th>Localidad</th>
+      <th>Provincia</th>
+      <th>Telefono</th>
+      <th>Email</th>
+      <th>Cantidad</th>
+      <th>En mecenas</th>
+      <th>Certificado</th>
+      <th>Comprobado</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aportacions.each do |aportacion| %>
+      <tr>
+        <td><%= aportacion.name %></td>
+        <td><%= aportacion.email %></td>
+        <td><%= aportacion.dni_cif %></td>
+        <td><%= aportacion.dir1 %></td>
+        <td><%= aportacion.dir2 %></td>
+        <td><%= aportacion.cp %></td>
+        <td><%= aportacion.localidad %></td>
+        <td><%= aportacion.provincia %></td>
+        <td><%= aportacion.telefono %></td>
+        <td><%= aportacion.email %></td>
+        <td><%= aportacion.cantidad %></td>
+        <td><%= aportacion.en_mecenas %></td>
+        <td><%= aportacion.certificado %></td>
+        <td><%= aportacion.comprobado %></td>
+        <td><%= link_to 'Show', aportacion %></td>
+        <td><%= link_to 'Edit', edit_aportacion_path(aportacion) %></td>
+        <td><%= link_to 'Destroy', aportacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aportacion', new_aportacion_path %>
