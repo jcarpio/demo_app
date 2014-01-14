@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 group :development, :test do
   gem 'rspec-rails', '2.9.0'
+  gem 'annotate'
 end
 
 group :test do
