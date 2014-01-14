@@ -1,7 +1,9 @@
 DemoApp::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/help"
-  get "static_pages/about"
+  root to: 'static_pages#home', via: :all
+
+  match '/help', to: 'static_pages#home', via: :all
+  match '/about', to: 'static_pages#about', via: :all
+  match '/contact', to: 'static_pages#contact', via: :all
 
   resources :microposts
 
