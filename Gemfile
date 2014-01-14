@@ -1,5 +1,16 @@
 source 'https://rubygems.org'
 
+group :development, :test do
+  gem 'rspec-rails', '2.9.0'
+end
+
+group :test do
+  gem 'capybara', '1.1.2'
+end
+
+# Bootstrap CSS estilo 
+gem 'bootstrap-sass', '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
